@@ -7,7 +7,8 @@ language: node_js
 node_js:
     - '0.12'
 notifications:
-    irc: 'irc.freenode.org#tastejs'
+  email:
+    - ilya@pukhalski.com
 env:
     global:
         # GH_OAUTH_TOKEN is the oauth token generated as described at
@@ -21,9 +22,9 @@ env:
         # travis encrypt GH_OAUTH_TOKEN=XXXXXXXXXXXXXXX
         #
         # User specific env variables
-        - secure: 'fHgfjMpYuliwMr2QLnjYZExIViNrxprf9dhXRBLZ6P9Hz7P6m1BMYrI/xEG8X+fFbCi0+n3AXh8SEMHi9ou/Pty/cx12z4w/z3B2BHMxh4XBwpZHs+AB4IXkLiwwWoP4QFy4vTipgYnMDMq9CRhlRbhZEpenQBmaTEc472By1uM='
-        - GH_OWNER: tastejs
-        - GH_PROJECT_NAME: todomvc
+        - secure: 'mJ0gi2Z+XZqOZ2BdwxDOP/hyJmpCDNi+/5OBejzbnMoF7gmI29Jki9mmiNMAzsLSttWMKLxgM4boX0Be1kXWnZ/qXYDpPUpRh0BYZSRCA4Qzj2w6B9AzJvfsuyrRUVjo0Vi3ca0JWcAeYMNDV8SGaKFNsPnp6XxlPKPt5zRpB8AzytnZaXnmOvlzTA+tWI5umQsxDTghkbH1pbCRZfKvbpRdmbO8FVoKPSgF3sciFY8WaQYyDhgWZ22+Z5hBiNIuzCXgzY/JVuoHK5aYtd6xAg/Pwv2PV7e/MGGeW3yBtoae/MIshT8P3tp6O+PE4oRKky6J/us8Kg54trOKfnI3goZXiiHi3cwQSM15eIIeRrTsPB42lLUdYZlj2lrTkHtt48d9bbpIqA6O+tdBPaKp6qbn/JtGX+mOZWmYzg23ki/qYLaTfl4Bn8qRdb7fDJCZabcdzvJ7Tq5ZtJ1dAHMJY13GddD/O/CMZG/i60mMzIL41VbjDyd4qLmmqhrSGhAH4U+FKX4M9K2Q3K0miIlVUwf599xoAcmuufX63kBYwXcm6dXKbua3QYuSzPMIXlKyHmKJGiVjZcFjSsVyv/ioiNQSU55wPyI3BiBnAJjOn7pldkOtuVEJHZenViFA8T7Z7yDUH9EwoAh9ChfXWsX+Tri8Q5nagt8IY6MvTBixA4k='
+        - GH_OWNER: todoflux
+        - GH_PROJECT_NAME: todoflux
         - CHROME_PATH: '/home/travis/build/tastejs/todomvc/chrome-linux/chrome'
 before_install:
     - export DISPLAY=:99.0
