@@ -21,6 +21,7 @@ then
 	git config user.email 'ilya@pukhalski.com'
 	git config user.name 'pukhalski'
 	git commit -am 'update the build files for gh-pages [ci skip]'
+	printenv
 	# Any command that using GH_OAUTH_TOKEN must pipe the output to /dev/null to not expose your oauth token
 	git push https://${GH_OAUTH_TOKEN}@github.com/${GH_OWNER}/${GH_PROJECT_NAME} HEAD:gh-pages > /dev/null 2>&1
 else
