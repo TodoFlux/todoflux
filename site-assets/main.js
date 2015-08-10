@@ -217,6 +217,6 @@
 		}.bind(this));
 	};
 
-	new AppTabs();
+	//new AppTabs();
 
 }());
