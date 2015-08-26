@@ -16,29 +16,15 @@ Recommended file structure:
 index.html
 package.json
 node_modules/
-css
-└── app.css
 js/
 ├── app.js
-├── controllers/
-└── models/
+├── actions/
+└── components/
+└── stores/
 readme.md
 ```
 
 Try to follow this structure as close a possible while still keeping to the framework’s best practices.
-
-Components should be split up into separate files and placed into folders where it makes the most sense.
-
-Example:
-
-```
-js/
-├── app.js
-├── controllers/
-│   └── todos.js
-└── models/
-    └── todo.js
-```
 
 Keep in mind that framework’s best practices on how to structure your app come first.
 
@@ -54,7 +40,6 @@ Unless it conflicts with the project's best practices, your example should use [
 {
   "private": true,
   "dependencies": {
-    "backbone": "^1.1.2",
     "todomvc-app-css": "^1.0.0",
     "todomvc-common": "^1.0.1"
   }
@@ -81,7 +66,7 @@ Make sure to follow these:
 
 ### No todos
 
-When there are no todos, `#main` and `#footer` should be hidden.
+When there are no todos, `.main` and `.footer` should be hidden.
 
 ### New todo
 
@@ -119,4 +104,4 @@ Your app should dynamically persist the todos to localStorage. If the framework 
 
 ### Routing
 
-Routing is required for all frameworks. Use the built-in capabilities if supported, otherwise use the  [Flatiron Director](https://github.com/flatiron/director) routing library located in the `/assets` folder. The following routes should be implemented: `#/` (all - default), `#/active` and `#/completed` (`#!/` is also allowed). When the route changes the todo list should be filtered on a model level and the `selected` class on the filter links should be toggled. When an item is updated while in a filtered state, it should be updated accordingly. E.g. if the filter is `Active` and the item is checked, it should be hidden. Make sure the active filter is persisted on reload.
+Routing is required for all frameworks. Use the built-in capabilities if supported, otherwise use any other routing library, but make sure you described everything in README file. The following routes should be implemented: `#/` (all - default), `#/active` and `#/completed` (`#!/` is also allowed). When the route changes the todo list should be filtered on a model level and the `selected` class on the filter links should be toggled. When an item is updated while in a filtered state, it should be updated accordingly. E.g. if the filter is `Active` and the item is checked, it should be hidden. Make sure the active filter is persisted on reload.
