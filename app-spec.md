@@ -4,7 +4,7 @@ We have created this short spec to help you create awesome and consistent todo a
 
 ## Template Application
 
-Our [template](https://github.com/tastejs/todomvc-app-template/) should be used as the base when implementing a todo app. Before implementing, we recommend you interact with some of the other apps to see how they're built and how they behave. Check out the [Backbone app](http://todomvc.com/examples/backbone) if you need a reference implementation. If something is unclear or could be improved, [let us know](https://github.com/tastejs/todomvc/issues).
+Our [template](https://github.com/todoflux/todoflux-app-template/) should be used as the base when implementing a todo app. Before implementing, we recommend you interact with some of the other apps to see how they're built and how they behave. Check out the [Backbone app](http://todomvc.com/examples/backbone) if you need a reference implementation. If something is unclear or could be improved, [let us know](https://github.com/tastejs/todomvc/issues).
 
 ## Structure
 
@@ -17,7 +17,7 @@ index.html
 package.json
 node_modules/
 js/
-├── app.js
+├── bundle.js
 ├── actions/
 └── components/
 └── stores/
@@ -30,7 +30,7 @@ Keep in mind that framework’s best practices on how to structure your app come
 
 ### README
 
-All examples must include a README describing the framework, the general implementation and the build process if required. There is an [example readme](https://github.com/tastejs/todomvc-app-template/blob/master/app-readme.md) included in the [template](https://github.com/tastejs/todomvc-app-template).
+All examples must include a README describing the framework, the general implementation and the build process if required. There is an [example readme](https://github.com/todoflux/todoflux-app-template/blob/master/app-readme.md) included in the [template](https://github.com/todoflux/todoflux-app-template).
 
 ### Dependency Management
 
