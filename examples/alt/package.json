@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "main": "./js/app.js",
+  "devDependencies": {
+    "babelify": "latest",
+    "browserify": "latest"
+  },
+  "dependencies": {
+    "todomvc-app-css": "latest",
+    "todomvc-common": "latest",
+    "object-assign": "latest",
+    "react": "^0.12.2"
+  },
+  "scripts": {
+    "build": "browserify . > js/bundle.js",
+    "test": "jest"
+  },
+  "author": "Ilya Pukhalski",
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "jest": {
+    "rootDir": "./js"
+  }
+}
